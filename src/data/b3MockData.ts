@@ -283,7 +283,7 @@ export function generateOptionChainForAsset(
   }
 
   for (const exp of expirations) {
-    const T = Math.max(0.0001, exp.daysToExpiration / 365);
+    const T = Math.max(0.0001, exp.daysToExpiration / 252);
     const options: OptionContract[] = [];
 
     for (const strike of strikes) {
@@ -465,7 +465,7 @@ export function recalculateOptionChainForSpot(
   riskFreeRate: number = DEFAULT_RISK_FREE_RATE
 ): ExpirationSeries[] {
   return seriesList.map((series) => {
-    const T = Math.max(0.0001, series.daysToExpiration / 365);
+    const T = Math.max(0.0001, series.daysToExpiration / 252);
 
     const updatedOptions = series.options.map((opt) => {
       const bs = calculateBlackScholes(newSpot, opt.strike, T, riskFreeRate, opt.iv, opt.type);
