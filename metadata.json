@@ -1,0 +1,6 @@
+{
+  "name": "B3 Opções - Simulador & Risco Neon",
+  "description": "Simulador profissional de negociações no mercado de opções da B3 com precificação Black-Scholes, gregas em tempo real e visualização de payoff.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

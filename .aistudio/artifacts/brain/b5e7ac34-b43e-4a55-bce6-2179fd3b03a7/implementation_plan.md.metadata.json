@@ -1,0 +1,6 @@
+{
+  "summary": "Plano de implementação completo para o Simulador de Negociações e Análise de Risco de Opções da B3 com tema dark neon, grade completa de opções, precificação Black-Scholes, cálculo de volatilidade implícita e preço justo, simulador de estruturas perna a perna, gráficos interativos de payoff e gregas (Delta, Gamma, Theta, Vega), probabilidade de lucro e atualização automática periódica a cada 30 segundos.",
+  "updatedAt": "2026-11-06T19:55:16.203640519Z",
+  "requestFeedback": true,
+  "userFacing": true
+}
